@@ -1,0 +1,30 @@
+.box{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 0 50% 50% 0;
+}
+.blue.bordered{
+  border: 2px solid #7cc4dd;
+}
+.green.bordered{
+  border: 2px solid green;
+}
+.blue{background: firebrick;}
+.green{background: lightgreen;}
+
+ div{
+   background: blue;
+ }
+p{
+  margin: 13px 6px 13px 5px;
+  position: relative;
+  top: 23px;
+
+
+}
+.green .box{
+    padding: 13px 6px 13px 5px;
+    text-align: inherit;
+}
