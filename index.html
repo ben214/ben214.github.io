@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shlomi Stern — Full-Stack PHP Developer</title>
+<meta name="description" content="Shlomi Stern, full-stack PHP developer. E-commerce systems, product configurators, offline-first web apps. Native English, based in Israel, available for remote work.">
+<meta property="og:title" content="Shlomi Stern — Full-Stack PHP Developer">
+<meta property="og:description" content="E-commerce systems, product configurators and offline-first web apps. Available for remote work.">
+<meta property="og:image" content="https://ben214.github.io/img/configurator.webp">
+<style>
+:root{--ink:#17191c;--muted:#5f6670;--line:#e6e3dc;--bg:#faf9f6;--card:#fff;--accent:#2c6a53;--accent-soft:#e8f1ec}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--accent)}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:12px;flex-wrap:wrap}
+nav b{font-size:17px}
+nav .links a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600;font-size:14px}
+nav .links a:hover{color:var(--ink)}
+.hero{padding:40px 0 34px}
+.hero h1{font-size:clamp(30px,5vw,46px);line-height:1.12;letter-spacing:-.025em;margin:0 0 16px;max-width:780px}
+.hero p{font-size:18px;color:var(--muted);max-width:700px;margin:0 0 22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:999px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:#fff;color:var(--ink)}
+.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px}
+.card h3{margin:0 0 4px;font-size:21px;letter-spacing:-.01em}
+.meta{color:var(--muted);font-size:14px;margin-bottom:12px}
+.card p{margin:0 0 12px}
+.card ul{margin:0 0 14px;padding-left:20px}
+.card li{margin:4px 0}
+.shot{width:100%;border-radius:12px;border:1px solid var(--line);margin:6px 0 14px;display:block;background:#fff}
+.phones{display:flex;gap:12px;margin:6px 0 14px;overflow-x:auto}
+.phones img{width:180px;flex:none;border-radius:14px;border:1px solid var(--line)}
+.links-row{display:flex;gap:16px;flex-wrap:wrap;font-weight:600;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}
+.grid .card{margin:0}
+.grid h3{font-size:17px}
+.tag{font-size:12px;color:var(--muted);font-weight:600}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.skills h3{font-size:15px;margin:0 0 6px}
+.skills p{margin:0;color:var(--muted);font-size:15px}
+.note{font-size:14px;color:var(--muted)}
+footer{padding:34px 0 50px;border-top:1px solid var(--line)}
+footer h2{margin-bottom:10px}
+footer p{margin:0 0 6px}
+code{font:14px ui-monospace,Menlo,Consolas,monospace;background:#f1efe9;padding:1px 5px;border-radius:5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <b>Shlomi Stern</b>
+  <div class="links"><a href="#work">Work</a><a href="#projects">Projects</a><a href="#how">How I work</a><a href="#contact">Contact</a></div>
+</nav>
+
+<div class="hero">
+  <h1>Full-stack PHP developer who builds the hard parts of e-commerce.</h1>
+  <p>For the last three years I've designed, built and maintained the production systems behind an Israeli furniture store, including a product configurator that renders every variant live from a single photo. I'm a native English speaker (born in England), based in Israel, and available for remote work.</p>
+  <div class="chips">
+    <span class="chip">PHP 7/8</span><span class="chip">MySQL / MariaDB</span><span class="chip">JavaScript</span><span class="chip">PrestaShop / thirty bees modules</span><span class="chip">WordPress</span><span class="chip">PWAs &amp; Web Push</span><span class="chip">GitHub Actions</span>
+  </div>
+  <div class="cta">
+    <a class="btn primary" href="https://ben214.github.io/layer-configurator-demo/">Try the configurator demo</a>
+    <a class="btn" href="mailto:bsfstern@gmail.com">Email me</a>
+    <a class="btn" href="https://github.com/ben214">GitHub</a>
+  </div>
+</div>
+
+<section id="work">
+  <h2>Production work · o-m.co.il (furniture e-commerce) · 2023 – present</h2>
+
+  <div class="card">
+    <h3>AttrConfigurator: one photo, every variant</h3>
+    <div class="meta">thirty bees / PrestaShop module · PHP, MySQL, JavaScript, CSS masks</div>
+    <img class="shot" src="img/configurator.webp" alt="The same sofa photo rendered in navy velvet with brass legs and in cream bouclé with oak legs" width="1400" height="406">
+    <p>Instead of photographing every fabric × color × leg combination, each product has one base photo. Every part of the product is a CSS-masked layer filled with a color or texture, with its own blend mode, opacity and stacking order. Choosing an option repaints the layers instantly.</p>
+    <ul>
+      <li>Staff admin for uploading masks (PNG/JPEG automatically converted to WebP with PHP GD, transparency kept), a materials library, and attribute-to-material mappings at global, category, supplier or product level.</li>
+      <li>22-table MySQL schema with 21 versioned upgrade scripts: layers, materials, price rules (add / set / multiply), visibility rules and prioritized JSON condition rules.</li>
+      <li>Safe concurrent editing for staff: InnoDB transactions, <code>SELECT … FOR UPDATE</code> and optimistic last-updated checks.</li>
+      <li>A new rule resolver rolled out in <b>shadow mode</b> with parity reports against the old logic before switching over.</li>
+      <li>Plugged into the existing add-to-cart flow, per product, alongside or instead of the store's commercial attribute module.</li>
+    </ul>
+    <div class="links-row"><a href="https://ben214.github.io/layer-configurator-demo/">Live demo →</a><a href="https://github.com/ben214/layer-configurator-demo">Demo source →</a></div>
+    <p class="note" style="margin-top:10px">The production code belongs to the store. The demo is a from-scratch rebuild of the core technique: my own art, textures and code.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>The customer's design, saved to the cart</h3>
+      <p>The configured product is rendered in the browser on a canvas, validated in PHP, converted to WebP and stored on the exact cart line, so the cart and the order show the customer's own design. Images are served by HMAC-signed URLs with token and cart-ownership checks.</p>
+      <span class="tag">PHP · Canvas · security</span>
+    </div>
+    <div class="card">
+      <h3>Clickable product hotspots</h3>
+      <p>A drag-and-drop admin editor for placing points on a product photo. On the store, each point opens and scrolls to its attribute group.</p>
+      <span class="tag">PrestaShop module · JavaScript</span>
+    </div>
+    <div class="card">
+      <h3>“Virtual variant” category tiles</h3>
+      <p>Staff-built variant tiles on category pages, with canonical and noindex handling so they help shoppers without hurting SEO.</p>
+      <span class="tag">PHP · Smarty · SEO</span>
+    </div>
+    <div class="card">
+      <h3>Store tooling</h3>
+      <p>An absolute price matrix for combinations, a product-image watermark overlay, a log of every outgoing store email, bulk WebP conversion, and Python FTP/SFTP sync scripts.</p>
+      <span class="tag">PHP · Python · ops</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Own projects</h2>
+  <div class="card">
+    <h3>Guitar Lessons Journal</h3>
+    <div class="meta">2026 · vanilla JS PWA + PHP JSON API · Hebrew, right-to-left · in daily use</div>
+    <div class="phones">
+      <img src="img/schedule.png" alt="Weekly lesson schedule" loading="lazy"><img src="img/students.png" alt="Students with weekly slots and balances" loading="lazy"><img src="img/money.png" alt="Monthly income summary" loading="lazy">
+    </div>
+    <p>The app I use to run my own guitar teaching: weekly slots turn into lessons automatically, then attendance, partial payments, debts and monthly income. It works offline and syncs to a password-protected PHP API with atomic writes and 60 days of daily backups. Lesson reminders are sent as Web Push notifications I implemented from the RFCs (VAPID + aes128gcm, PHP openssl only), driven by cron. Every push to <code>main</code> deploys through GitHub Actions over FTPS.</p>
+    <div class="links-row"><a href="https://github.com/ben214/guitar-lessons-journal">Source on GitHub →</a></div>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Chizuk: a daily-routine app</h3>
+      <p>A Hebrew app that gives one small task at five set times each day, with content kept separate from the code, offline support and cron-driven phone notifications. Built on the same stack. Private, since it's personal.</p>
+      <span class="tag">PWA · PHP · Web Push</span>
+    </div>
+    <div class="card">
+      <h3>Earlier work</h3>
+      <p>Python scrapers for houzz.com, Angular / TypeScript front ends, a NestJS + MongoDB API, and client websites, including a law-firm site and WordPress sites.</p>
+      <span class="tag">Python · Angular · Node.js</span>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>How I work</h2>
+  <div class="skills">
+    <div><h3>Small, safe steps</h3><p>Plan first, build one small phase, validate, checkpoint, then commit only approved files.</p></div>
+    <div><h3>AI as a power tool</h3><p>I use Claude, ChatGPT and coding agents every day, under written project rules I set myself (e.g. no changes to cart, pricing or checkout without explicit approval). I read and own every line that ships.</p></div>
+    <div><h3>Production-minded</h3><p>Shadow-mode rollouts, parity reports, transactions and backups. On a live store, the change that doesn't break anything wins.</p></div>
+    <div><h3>Hard problems welcome</h3><p>Tell me what can't be done, and I'll find a way to build it.</p></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <h2>Contact</h2>
+  <p><a href="mailto:bsfstern@gmail.com">bsfstern@gmail.com</a> · <a href="https://www.linkedin.com/in/benjamin-stern-5b90a481">LinkedIn</a> · <a href="https://github.com/ben214">GitHub</a></p>
+  <p class="note">Beit Shemesh, Israel (GMT+2). English (native, UK-born), Hebrew (fluent). Open to remote contract or part-time roles.</p>
+</footer>
+</div>
+</body>
+</html>
